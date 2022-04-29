@@ -22,19 +22,24 @@
 <br>
 
 ## 딥러닝(Deep Learning) 이란?
-`딥 러닝`은 **머신 러닝의 한 방법**으로, 학습 과정 동안 인공 신경망으로서 예시 데이터에서 얻은 `일반적인 규칙을 독립적으로 구축(훈련)`합니다. 
+`딥 러닝`은 **머신 러닝의 한 방법**으로, 학습 과정 동안 인공 신경망으로서 `예시 데이터`에서 얻은 일반적인 규칙을 **독립적**으로 구축(훈련)합니다. 
 
-특히 머신 비전 분야에서 신경망은 일반적으로 데이터와 예제 데이터에 대한 사전 정의된 결과와 같은 `지도 학습`을 통해 학습됩니다.
+특히 머신 비전 분야에서 신경망은 일반적으로 데이터와 예제 데이터에 대한 사전 정의된 결과와 같은 **지도 학습**을 통해 학습됩니다.
 
 ### 함께 볼 것
 * [모두를 위한 딥러닝 강좌 시즌1](https://www.youtube.com/playlist?list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm)
 * [딥러닝 홀로서기 - Idea Factory KAIST](https://www.youtube.com/watch?v=hPXeVHdIdmw&list=PLSAJwo7mw8jn8iaXwT4MqLbZnS-LJwnBd)
   * 입문용, 딥러닝 이해
 * [논문으로 시작하는 딥러닝](https://www.edwith.org/deeplearningchoi)
+
+### 조언
+```
+논문 리딩 습관을 발전시키세요.
+효과적인 논문 읽기: 읽을 논문 리스트를 만들고, 취사 선택하세요.
+알고리즘 이해: 수식을 직접 쓰면서 이해하고 밑바닥부터 코드로 구현하세요.
+```
   
-
 ### Basic Deep Learning
-
 - Week1: 딥러닝의 기본 개념: 시작과 XOR 문제
 - Week2: 딥러닝의 기본 개념 2: Back-propagation 과 2006/2007 '딥'의 출현
 - Week3: XOR 문제 딥러닝으로 풀기
@@ -45,5 +50,6 @@
 - Week8: Weight 초기화 잘해보자
 - Week9: Dropout
 - Week10: Batch Normalization
+
 
 ## Week1 딥러닝의 기본 개념
