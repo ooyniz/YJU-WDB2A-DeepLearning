@@ -32,6 +32,7 @@
   * 입문용, 딥러닝 이해
 * [논문으로 시작하는 딥러닝](https://www.edwith.org/deeplearningchoi)
 
+
 ### 조언
 ```
 논문 리딩 습관을 발전시키세요.
@@ -39,17 +40,12 @@
 알고리즘 이해: 수식을 직접 쓰면서 이해하고 밑바닥부터 코드로 구현하세요.
 ```
   
-### Basic Deep Learning
-- Week1: 딥러닝의 기본 개념: 시작과 XOR 문제
-- Week2: 딥러닝의 기본 개념 2: Back-propagation 과 2006/2007 '딥'의 출현
-- Week3: XOR 문제 딥러닝으로 풀기
-- Week4: 딥넷트웍 학습 시키기 (backpropagation)
-- Week5: Neural Net for XOR
-- Week6: Tensorboard (Neural Net for XOR)
-- Week7: Sigmoid 보다 ReLU가 더 좋아
-- Week8: Weight 초기화 잘해보자
-- Week9: Dropout
-- Week10: Batch Normalization
+### Deep Learning Content
+- 1: 딥러닝 개념 탐구
+    * [deep-learning-tutorial-for-beginners](https://www.kaggle.com/code/kanncaa1/deep-learning-tutorial-for-beginners)
+    * [intro-to-deep-learning](https://www.kaggle.com/learn/intro-to-deep-learning)
+- 2: 예제 풀이
+    * [classifying_the_cats_and_dogs](https://codetorial.net/tensorflow/classifying_the_cats_and_dogs.html)
+- 3: 논문 읽기
+    * [Going deeper with convolutions(Inception-v1) - 2014](https://arxiv.org/pdf/1409.4842v1.pdf)
 
-
-## Week1 딥러닝의 기본 개념
