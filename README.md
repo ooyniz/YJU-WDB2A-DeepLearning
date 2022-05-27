@@ -111,7 +111,7 @@ n개의 input과 1개의 output에 대하여 각각의 input의 weight를 wi라 
 
 XOR 같은 간단한 것도 학습하지 못하는 퍼셉트론의 단점을 해결하기 위한 방법은 의외로 단순하였는데 
 
-Input layer와 output layer사이에 하나 이상의 hidden layer를 추가하여 학습하는 것, 다층 퍼셉트론(Multilayer perceptron)이라 합니다.
+Input layer와 output layer사이에 하나 이상의 hidden layer를 추가하여 학습하는 것, [다층 퍼셉트론(Multilayer perceptron)](https://en.wikipedia.org/wiki/Multilayer_perceptron)이라 합니다.
 
 아래 그림을 보면 hidden layer가 증가할수록 분류력이 좋아지는 것을 확인할 수 있습니다.
 
@@ -120,7 +120,7 @@ Input layer와 output layer사이에 하나 이상의 hidden layer를 추가하�
 
 허나 이 방법은 hidden layer의 갯수가 증가할수록 weight의 갯수도 계속 증가하게 되어 학습(Traning)이 어렵다는 단점이 있는데 
 
-Rumelhart등은 에러역전파알고리즘(Error Backpropagation Algorithm)을 개발하여 다층 퍼셉트론의 학습을 가능하게 하였습니다. 
+Rumelhart등은 [에러역전파알고리즘(Error Backpropagation Algorithm)](https://en.wikipedia.org/wiki/Backpropagation)을 개발하여 다층 퍼셉트론의 학습을 가능하게 하였습니다. 
 
 에러역전파알고리즘으로 다층퍼셉트론을 학습할 수 있게 되었으나 이것을 실제로 사람들이 이용하기에는 많은 어려움이 따랐는데 그 이유들은 다음과 같습니다.
 
@@ -129,17 +129,17 @@ Rumelhart등은 에러역전파알고리즘(Error Backpropagation Algorithm)을 
 3. Overfitting problem
 4. Local minima에 빠질 가능성
 
-추정해야 하는 모수가 많기 때문에 데이터가 많이 필요하고 그 중에서도 labeled data가 많이 필요합니다. 
+추정해야 하는 모수가 많기 때문에 데이터가 많이 필요하고 그 중에서도 [labeled data](https://en.wikipedia.org/wiki/Labeled_data)가 많이 필요합니다. 
 
 허나 우리가 갖고 있는 데이터는 unlabeled data가 훨씬 많으며 실제 인간의 뇌의 학습 중 많은 부분이 unlabeled data를 이용한 Unsupervised Learning이며, 
 
-적은 양의 labeled data로 다층퍼셉트론을 학습하면 종종 hidden layer가 1개인 경우보다 성능이 떨어지는 경우를 관찰할 수 있으며 이것이 과적합(Overfitting)의 예시입니다.
+적은 양의 labeled data로 다층퍼셉트론을 학습하면 종종 hidden layer가 1개인 경우보다 성능이 떨어지는 경우를 관찰할 수 있으며 이것이 [과적합(Overfitting)](https://ko.wikipedia.org/wiki/%EA%B3%BC%EC%A0%81%ED%95%A9)의 예시입니다.
 
 다음으로 Activation function을 살펴보면 logistic function이든 tanh function이든 가운데 부분보다 양 끝이 현저히 기울기의 변화가 작은 것을 발견할 수 있습니다.
 
 ![image](https://user-images.githubusercontent.com/102000749/170700277-299d32eb-6971-4b82-85dd-ede9b132faba.png)
 
-때문에 학습이 진행될수록 급속도로 기울기가 0에 가까워져서 나중에는 거의 Gradient descent가 일어나지 않아 학습이 되지 않는 단점이 있습니다.
+때문에 학습이 진행될수록 급속도로 기울기가 0에 가까워져서 나중에는 거의 [Gradient descent](https://ko.wikipedia.org/wiki/%EA%B2%BD%EC%82%AC_%ED%95%98%EA%B0%95%EB%B2%95)가 일어나지 않아 학습이 되지 않는 단점이 있습니다.
 
 마지막으로 최소제곱추정량이나 최대가능도추정량등 직접적으로 최소값을 구하는 방법을 이용하지 못하고 알고리즘을 이용하여 최소값에 가까워지게 했기 때문에
 
