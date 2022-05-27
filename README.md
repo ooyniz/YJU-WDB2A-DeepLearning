@@ -12,10 +12,10 @@
 </table>
 
 ## 🔍 Content
-1. [인공지능 알고리즘](인공지능-알고리즘)
-2. [딥러닝(Deep Learning) 이란?](딥러닝(Deep-Learning)-이란?)
-3. [The History of Deep Learning](The-History-of-Deep-Learning)
-4. [CNN (Convolutional Neural Network, 컨볼루션 신경망)](CNN-(Convolutional-Neural-Network,-컨볼루션-신경망))
+1. [인공지능 알고리즘](#인공지능-알고리즘)
+2. [딥러닝(Deep Learning) 이란?](#딥러닝(Deep-Learning)-이란?)
+3. [The History of Deep Learning](#The-History-of-Deep-Learning)
+4. [CNN (Convolutional Neural Network, 컨볼루션 신경망)](#CNN-(Convolutional-Neural-Network,-컨볼루션-신경망))
 
 
 <br>
