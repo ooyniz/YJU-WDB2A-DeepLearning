@@ -15,10 +15,10 @@
 1. [인공지능 알고리즘](#인공지능-알고리즘)
 2. [딥러닝(Deep Learning) 이란?](#딥러닝deep-learning-이란)
 4. [The History of Deep Learning](#the-history-of-deep-learning)
-   + [1세대: Perceptron](1세대-perceptron)
-   + [2세대: Multilayer Perceptron](2세대-multilayer-perceptron)
-   + [3세대: Unsupervised Learning - Boltzmann Machine](3세대-unsupervised-learning--boltzmann-machine)
-   + [3세대: Supervised Learning - Rectified linear unit (ReLU), Dropout](3세대-supervised-learning--rectified-linear-unit-relu-dropout)
+   + [1세대: Perceptron](#1세대-perceptron)
+   + [2세대: Multilayer Perceptron](#2세대-multilayer-perceptron)
+   + [3세대: Unsupervised Learning - Boltzmann Machine](#3세대-unsupervised-learning---boltzmann-machine)
+   + [3세대: Supervised Learning - Rectified linear unit (ReLU), Dropout](#3세대-supervised-learning---rectified-linear-unit-relu-dropout)
 6. [CNN (Convolutional Neural Network, 컨볼루션 신경망)](#cnn-convolutional-neural-network-컨볼루션-신경망)
 
 
