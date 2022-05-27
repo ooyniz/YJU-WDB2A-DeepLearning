@@ -178,6 +178,8 @@ pre-training이 좋은 시작점을 제공하여 local minima 문제도 해결�
 
 ## CNN (Convolutional Neural Network, 컨볼루션 신경망)
 
+![image](https://user-images.githubusercontent.com/102000749/170703624-83c024a1-420c-4b61-8bd0-fc90fcefd075.png)
+
 CNN(Convolutional Neural Network)는 합성곱신경망으로도 불립니다. 
 
 주로 시각적 이미지를 분석하는 데 사용되는데 머신러닝의 한 유형인 딥러닝에서 가장 많이 사용되고 있는 알고리즘입니다.
