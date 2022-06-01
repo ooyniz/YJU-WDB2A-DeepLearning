@@ -232,3 +232,5 @@ learning late는 0.01로 초기화 시켰고 validation error가 상향되지 �
 [ImageNet Classification with Deep Convolutional Neural Networks](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
 
 [AlexNet](https://naknaklee.github.io/classification/2020/04/22/AlexNet-Post-Review/)
+
+
