@@ -14,13 +14,19 @@
 ## 🔍 Content
 1. [인공지능 알고리즘](#인공지능-알고리즘)
 2. [딥러닝(Deep Learning) 이란?](#딥러닝deep-learning-이란)
-4. [The History of Deep Learning](#the-history-of-deep-learning)
+3. [The History of Deep Learning](#the-history-of-deep-learning)
    + [1세대: Perceptron](#1세대-perceptron)
    + [2세대: Multilayer Perceptron](#2세대-multilayer-perceptron)
    + [3세대: Unsupervised Learning - Boltzmann Machine](#3세대-unsupervised-learning---boltzmann-machine)
    + [3세대: Supervised Learning - Rectified linear unit (ReLU), Dropout](#3세대-supervised-learning---rectified-linear-unit-relu-dropout)
-6. [CNN (Convolutional Neural Network, 컨볼루션 신경망)](#cnn-convolutional-neural-network-컨볼루션-신경망)
-
+4. [CNN (Convolutional Neural Network, 컨볼루션 신경망)](#cnn-convolutional-neural-network-컨볼루션-신경망)
+5. reviews
+   + [ResNet](https://github.com/ooyniz/YJU-WDB2A-DeepLearning/blob/main/reviews/ResNet.md)
+   + [ViT](https://github.com/ooyniz/YJU-WDB2A-DeepLearning/blob/main/reviews/ViT.md)
+   + 
+6. practice
+   + [ViT](https://github.com/ooyniz/YJU-WDB2A-DeepLearning/blob/main/reviews/WD2A_1%EC%A1%B0_ViT_%EA%B5%AC%ED%98%84%ED%95%B4%EB%B3%B4%EA%B8%B0.ipynb)
+   + [ViT-2](https://github.com/ooyniz/YJU-WDB2A-DeepLearning/blob/main/reviews/WD2A_1%EC%A1%B0_ViT_%EA%B5%AC%ED%98%84%ED%95%B4%EB%B3%B4%EA%B8%B02.ipynb)
 
 <br>
 <br>
@@ -95,9 +101,7 @@ n개의 input과 1개의 output에 대하여 각각의 input의 weight를 wi라 
 
 ![image](https://user-images.githubusercontent.com/102000749/170698749-81713f87-fa86-45b8-8e74-c674ce5c1b11.png)
 
-즉, n개의 input의 선형결합(Linear Combination)에 Activation 함수를 적용하여 0$$1 사이의 확률값으로 y값을 제공하는 것이며, 
-
-확률값으로 받은 후에는 편의에 따라 0를 기준으로 event냐 아니냐(1 VS -1)를 판단합니다.
+즉, n개의 input의 선형결합(Linear Combination)에 Activation 함수를 적용하여 0$$1 사이의 확률값으로 y값을 제공합니다. 
 
 이것이 인공신경망 모형의 시작입니다. 
 
@@ -175,7 +179,7 @@ pre-training이 올바른 초기값 선정에도 도움을 주어 local minima p
 
 RBM을 이용한 Unsupervised learning을 이용하게 되면서 다층퍼셉트론의 약점이 많은 부분 극복되었습니다.
 
-Unlabeled data를 사용할 수 있게 되었고 이를 충분히 활용하여 overfitting issue, vanishing gradient문제가 해결되었고 
+Unlabeled data를 사용할 수 있게 되었고 이를 충분히 활용하여 overfitting issue 문제가 해결되었고 
 
 pre-training이 좋은 시작점을 제공하여 local minima 문제도 해결되는 것처럼 보였습니다. 
 
