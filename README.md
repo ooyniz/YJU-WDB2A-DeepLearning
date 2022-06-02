@@ -151,7 +151,7 @@ Rumelhart등은 [에러역전파알고리즘(Error Backpropagation Algorithm)](h
 
 학습에서 나온 최소값이 과연 진짜 최소값(Global minima)인가? 국소 최소값(Local minima)는 아닌가..에 대한 의문점이 풀리지 않게 됩니다. 
 
-시작점을 어떻게 두느냐에 따라 Local minima에 빠질 수도 있기 때문입니다.
+시작점을 어떻게 두느냐에 따라 `Local minima`에 빠질 수도 있기 때문입니다.
 
 ![image](https://user-images.githubusercontent.com/102000749/170700310-5241bf59-3733-44aa-aa2a-2886191f76bb.png)
 
@@ -161,13 +161,13 @@ Rumelhart등은 [에러역전파알고리즘(Error Backpropagation Algorithm)](h
 
 앞서 언급한 단점들 때문에 인공신경망 이론이 잘 이용되지 못하다가, 2006년 볼츠만 머신을 이용한 학습방법이 재조명되면서 인공신경망 이론이 다시 학계의 주목을 받게 되었는데 
 
-이 볼츠만 머신의 핵심 아이디어는 바로 Unsupervised Learning, 즉 label이 없는 데이터로 미리 충분한 학습을 한다는 것이며 그 후에 앞에 나온 역전파알고리즘 등을 통해 
+이 볼츠만 머신의 핵심 아이디어는 바로 `Unsupervised Learning`, 즉 **label이 없는 데이터로 미리 충분한 학습을 한다**는 것이며 그 후에 앞에 나온 [역전파알고리즘](https://ko.wikipedia.org/wiki/%EC%97%AD%EC%A0%84%ED%8C%8C) 등을 통해 
 
 기존의 supervised learning을 수행합니다. 
 
 아래 그림에 대략적인 묘사가 표현되어 있는데 아기들은 단어나 음, 문장의 뜻을 전혀 모르는 상태로 학습을 시작하게 되고 
 
-음소(phoneme), 단어(word), 문장(sentence)순으로 Unsupervised learning을 수행하게 되며 그 후에 정답을 가지고 supervised learning을 수행하게 됩니다.
+`음소(phoneme)`, `단어(word)`, `문장(sentence)`순으로 [Unsupervised learning](https://ko.wikipedia.org/wiki/%EB%B9%84%EC%A7%80%EB%8F%84_%ED%95%99%EC%8A%B5)을 수행하게 되며 그 후에 정답을 가지고 [supervised learning](https://ko.wikipedia.org/wiki/%EC%A7%80%EB%8F%84_%ED%95%99%EC%8A%B5)을 수행하게 됩니다.
 
 ![image](https://user-images.githubusercontent.com/102000749/170700914-84beb7cd-dbc1-4464-8fe3-7d07133d54c0.png)
 
@@ -179,7 +179,7 @@ pre-training이 올바른 초기값 선정에도 도움을 주어 local minima p
 
 ## 3세대: Supervised Learning - Rectified linear unit (ReLU), Dropout
 
-RBM을 이용한 Unsupervised learning을 이용하게 되면서 다층퍼셉트론의 약점이 많은 부분 극복되었습니다.
+**RBM**을 이용한 Unsupervised learning을 이용하게 되면서 다층퍼셉트론의 약점이 많은 부분 극복되었습니다.
 
 Unlabeled data를 사용할 수 있게 되었고 이를 충분히 활용하여 overfitting issue가 해결되었고 
 
@@ -197,28 +197,28 @@ pre-training이 좋은 시작점을 제공하여 local minima 문제도 해결�
 
 ![image](https://user-images.githubusercontent.com/102000749/170703624-83c024a1-420c-4b61-8bd0-fc90fcefd075.png)
 
-CNN(Convolutional Neural Network)는 합성곱신경망으로도 불립니다. 
+CNN(Convolutional Neural Network)는 `합성곱신경망`으로도 불립니다. 
 
-주로 시각적 이미지를 분석하는 데 사용되는데 머신러닝의 한 유형인 딥러닝에서 가장 많이 사용되고 있는 알고리즘입니다.
+주로 **시각적 이미지**를 분석하는 데 사용되는데 머신러닝의 한 유형인 `딥러닝`에서 가장 많이 사용되고 있는 알고리즘입니다.
 
-초창기 CNN을 개발한 사람들은 고양이의 시선에 따라 뇌에서 자극 받는 위치가 모두 다르다는 점을 착안하여 CNN의 아이디어를 얻었습니다. 
+초창기 CNN을 개발한 사람들은 `고양이의 시선`에 따라 뇌에서 자극 받는 위치가 모두 다르다는 점을 착안하여 CNN의 아이디어를 얻었습니다. 
 
 CNN은 이미지 전체를 작은 단위로 쪼개어 각 부분을 분석하는 것이 핵심입니다.
 
 ![image](https://user-images.githubusercontent.com/102000749/170703326-d881a95e-78e3-4f1d-879d-e4b3bdfa5dad.png)
 
 
-CNN은 이미지를 인식하기 위해 패턴을 찾는 데 유용합니다. 
+CNN은 이미지를 인식하기 위해 **패턴**을 찾는 데 유용합니다. 
 
 데이터를 통해 특징을 스스로 학습하고, 패턴을 사용하여 이미지를 분류하고 특징을 수동으로 추출할 필요가 없습니다. 
 
 또한 기존 네트워크를 바탕으로 새로운 인식 작업을 위해 CNN을 재학습하여 사용하는 것이 가능합니다.
 
-CNN은 이미지 인식이 주로 사용되는 휴대폰 잠금해제 인식이나 자율 주행 자동차와 같은 분야에 많이 사용됩니다. 
+CNN은 이미지 인식이 주로 사용되는 `휴대폰 잠금해제 인식`이나 `자율 주행 자동차`와 같은 분야에 많이 사용됩니다. 
 
 응용 분야에 따라 CNN을 처음부터 만들 수도 있고, 데이터셋으로 사전 학습된 모델을 사용할 수도 있습니다.
 
-CNN은 다른 신경망과 마찬가지로 입력 계층, 출력 계층 및 두 계층 사이의 여러 은닉 계층으로 구성됩니다.
+CNN은 다른 신경망과 마찬가지로 `입력 계층`, `출력 계층` 및 `두 계층 사이의 여러 은닉 계층`으로 구성됩니다.
 
 ![image](https://user-images.githubusercontent.com/102000749/170702307-081b9559-ba5d-4520-b36c-3f42f750d826.png)
 
