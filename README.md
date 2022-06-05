@@ -18,7 +18,6 @@
    + [1세대: Perceptron](#1세대-perceptron)
    + [2세대: Multilayer Perceptron](#2세대-multilayer-perceptron)
    + [3세대: Unsupervised Learning - Boltzmann Machine](#3세대-unsupervised-learning---boltzmann-machine)
-   + [3세대: Supervised Learning - Rectified linear unit (ReLU), Dropout](#3세대-supervised-learning---rectified-linear-unit-relu-dropout)
 4. [CNN (Convolutional Neural Network, 컨볼루션 신경망)](#cnn-convolutional-neural-network-컨볼루션-신경망)
 5. reviews
    + [LeNet-5](https://github.com/ooyniz/YJU-WDB2A-DeepLearning/blob/main/reviews/LeNet-5.md)
@@ -114,6 +113,9 @@
 딥러닝의 역사는 크게 3가지 세대로 나누며, 1세대는 최초의 인경신공망인 퍼셉트론, 2세대는 다층 퍼셉트론, 마지막 3세대를 현재의 딥러닝이라고 할 수 있습니다.
 
 ## 1세대: Perceptron
+
+![image](https://user-images.githubusercontent.com/102000749/172045967-d05fd200-8b8c-4828-87b3-c7f7809050a0.png)
+
 
 **[인공신경망](https://ko.wikipedia.org/wiki/%EC%9D%B8%EA%B3%B5_%EC%8B%A0%EA%B2%BD%EB%A7%9D)**`Neural Network`의 기원이 되는 퍼셉트론은 1958년 [Rosenblatt](https://en.wikipedia.org/wiki/Frank_Rosenblatt)가 제안하였는데, n개의 입력을 받아 특정한 연산을 거쳐 하나의 값을 출력하는 방식입니다.
 
@@ -222,7 +224,7 @@ CNN은 이미지를 인식하기 위해 **패턴**을 찾는 데 유용합니다
 
 또한 기존 네트워크를 바탕으로 새로운 인식 작업을 위해 CNN을 재학습하여 사용하는 것이 가능합니다.
 
-CNN은 이미지 인식이 주로 사용되는 **휴대폰 잠금해제 인식**이나 **자율 주행 자동차**와 같은 분야에 많이 사용됩니다. 
+CNN은 **이미지 인식**이 주로 사용되는 휴대폰 잠금해제 인식이나 자율 주행 자동차와 같은 분야에 많이 사용됩니다. 
 
 응용 분야에 따라 CNN을 처음부터 만들 수도 있고, 데이터셋으로 사전 학습된 모델을 사용할 수도 있습니다.
 
