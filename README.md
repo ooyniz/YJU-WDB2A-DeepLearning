@@ -111,13 +111,17 @@
 
 # The History of Deep Learning
 
+딥러닝의 역사는 크게 3가지 세대로 나누며, 1세대는 최초의 인경신공망인 퍼셉트론, 2세대는 다층 퍼셉트론, 마지막 3세대를 현재의 딥러닝이라고 할 수 있습니다.
+
 ## 1세대: Perceptron
 
-[인공신경망(Neural Network)](https://ko.wikipedia.org/wiki/%EC%9D%B8%EA%B3%B5_%EC%8B%A0%EA%B2%BD%EB%A7%9D)의 기원이 되는 퍼셉트론은 1958년 [Rosenblatt](https://en.wikipedia.org/wiki/Frank_Rosenblatt)가 제안하였는데, n개의 입력을 받아 특정한 연산을 거쳐 하나의 값을 출력하는 방식입니다.
+**[인공신경망](https://ko.wikipedia.org/wiki/%EC%9D%B8%EA%B3%B5_%EC%8B%A0%EA%B2%BD%EB%A7%9D)**`Neural Network`의 기원이 되는 퍼셉트론은 1958년 [Rosenblatt](https://en.wikipedia.org/wiki/Frank_Rosenblatt)가 제안하였는데, n개의 입력을 받아 특정한 연산을 거쳐 하나의 값을 출력하는 방식입니다.
 
 이 연산은 1차함수의 형태`f(x) = w * x + b`를 띄며, 여기에 **활성화 함수**`Activation Function`을 적용하여 최종 값을 출력합니다.  
 
 이 출력값은 참인지 거짓인지를 판단합니다. (0 vs 1)
+
+<br>
 
 n개의 input과 1개의 output에 대하여 각각의 input의 weight를 wi라 한 후 퍼셉트론을 수식으로 나타내면 다음과 같습니다.
 
@@ -125,9 +129,9 @@ n개의 input과 1개의 output에 대하여 각각의 input의 weight를 wi라 
 
 ![image](https://user-images.githubusercontent.com/102000749/170698749-81713f87-fa86-45b8-8e74-c674ce5c1b11.png)
 
-즉, n개의 input의 선형결합(Linear Combination)에 Activation 함수를 적용하여 0$$1 사이의 확률값으로 y값을 제공합니다. 
+즉, n개의 input의 **선형결합**`Linear Combination`에 Activation 함수를 적용하여 0$$1 사이의 확률값으로 y값을 제공합니다. 
 
-이것이 인공신경망 모형의 시작입니다. 
+이것이 **인공신경망 모형**의 시작입니다. 
 
 허나 이 모형은 아주 간단한 XOR problem마저 학습하지 못하는 등, 심각한 문제가 있는데(아래 그림) 
 
@@ -139,7 +143,7 @@ n개의 input과 1개의 output에 대하여 각각의 input의 weight를 wi라 
 
 XOR 같은 간단한 것도 학습하지 못하는 퍼셉트론의 단점을 해결하기 위한 방법은 의외로 단순하였는데 
 
-**입력층**`Input layer`와 **출력층**`output layer`사이에 하나 이상의 **은닉층**`hidden layer`를 추가하여 학습하는 것, [다층 퍼셉트론(Multilayer perceptron)](https://en.wikipedia.org/wiki/Multilayer_perceptron)이라 합니다.  
+**입력층**`Input layer`와 **출력층**`output layer`사이에 하나 이상의 **은닉층**`hidden layer`를 추가하여 학습하는 것, **[다층 퍼셉트론](https://en.wikipedia.org/wiki/Multilayer_perceptron)**`Multilayer perceptron`이라 합니다.  
 
 아래의 그림은 은닉층의 개수에 따라 모델의 분류력이 좋아진다는 것을 보여줍니다.  
 
@@ -147,7 +151,7 @@ XOR 같은 간단한 것도 학습하지 못하는 퍼셉트론의 단점을 해
 
 하지만 이런 방법은 은닉층의 개수가 증가할수록 가중치의 개수도 증가해 학습이 어렵다는 단점이 존재했습니다. 
 
-이러한 문제를 **[에러역전파알고리즘(Error Backpropagation Algorithm)](https://en.wikipedia.org/wiki/Backpropagation)**`Backpropagation Algorithm`을 개발하여 다층 퍼셉트론의 학습을 가능하게 하였습니다. 
+이러한 문제를 **[에러역전파알고리즘](https://en.wikipedia.org/wiki/Backpropagation)**`Backpropagation Algorithm`을 개발하여 다층 퍼셉트론의 학습을 가능하게 하였습니다. 
 
 에러역전파알고리즘으로 다층퍼셉트론을 학습할 수 있게 되었으나 이것을 실제로 사람들이 이용하기에는 많은 어려움이 따랐는데 그 이유들은 다음과 같습니다.
 
@@ -160,7 +164,7 @@ XOR 같은 간단한 것도 학습하지 못하는 퍼셉트론의 단점을 해
 
 허나 우리가 갖고 있는 데이터는 unlabeled data가 훨씬 많으며 실제 인간의 뇌의 학습 중 많은 부분이 unlabeled data를 이용한 Unsupervised Learning이며, 
 
-적은 양의 labeled data로 다층퍼셉트론을 학습하면 종종 hidden layer가 1개인 경우보다 성능이 떨어지는 경우를 관찰할 수 있으며 이것이 [과적합(Overfitting)](https://ko.wikipedia.org/wiki/%EA%B3%BC%EC%A0%81%ED%95%A9)의 예시입니다.
+적은 양의 labeled data로 다층퍼셉트론을 학습하면 종종 hidden layer가 1개인 경우보다 성능이 떨어지는 경우를 관찰할 수 있으며 이것이 **[과적합](https://ko.wikipedia.org/wiki/%EA%B3%BC%EC%A0%81%ED%95%A9)**`Overfitting`의 예시입니다.
 
 다음으로 Activation function을 살펴보면 logistic function이든 tanh function이든 가운데 부분보다 양 끝이 현저히 기울기의 변화가 작은 것을 발견할 수 있습니다.
 
@@ -172,7 +176,7 @@ XOR 같은 간단한 것도 학습하지 못하는 퍼셉트론의 단점을 해
 
 학습에서 나온 최소값이 과연 **진짜 최소값**`Global minima`인가? **국소 최소값**`Local minima`는 아닌가..에 대한 의문점이 풀리지 않게 됩니다. 
 
-시작점을 어떻게 두느냐에 따라 `Local minima`에 빠질 수도 있기 때문입니다.
+시작점을 어떻게 두느냐에 따라 **Local minima**에 빠질 수도 있기 때문입니다.
 
 ![image](https://user-images.githubusercontent.com/102000749/170700310-5241bf59-3733-44aa-aa2a-2886191f76bb.png)
 
@@ -201,11 +205,11 @@ XOR 같은 간단한 것도 학습하지 못하는 퍼셉트론의 단점을 해
 
 ![image](https://user-images.githubusercontent.com/102000749/170703624-83c024a1-420c-4b61-8bd0-fc90fcefd075.png)
 
-CNN(Convolutional Neural Network)는 `합성곱신경망`으로도 불립니다. 
+**CNN**`Convolutional Neural Network`는 **합성곱신경망**으로도 불립니다. 
 
-주로 **시각적 이미지**를 분석하는 데 사용되는데 머신러닝의 한 유형인 `딥러닝`에서 가장 많이 사용되고 있는 알고리즘입니다.
+주로 **시각적 이미지**를 분석하는 데 사용되는데 머신러닝의 한 유형인 **딥러닝**에서 가장 많이 사용되고 있는 알고리즘입니다.
 
-초창기 CNN을 개발한 사람들은 `고양이의 시선`에 따라 뇌에서 자극 받는 위치가 모두 다르다는 점을 착안하여 CNN의 아이디어를 얻었습니다. 
+초창기 CNN을 개발한 사람들은 **고양이의 시선**에 따라 뇌에서 자극 받는 위치가 모두 다르다는 점을 착안하여 CNN의 아이디어를 얻었습니다. 
 
 CNN은 이미지 전체를 작은 단위로 쪼개어 각 부분을 분석하는 것이 핵심입니다.
 
@@ -218,11 +222,11 @@ CNN은 이미지를 인식하기 위해 **패턴**을 찾는 데 유용합니다
 
 또한 기존 네트워크를 바탕으로 새로운 인식 작업을 위해 CNN을 재학습하여 사용하는 것이 가능합니다.
 
-CNN은 이미지 인식이 주로 사용되는 `휴대폰 잠금해제 인식`이나 `자율 주행 자동차`와 같은 분야에 많이 사용됩니다. 
+CNN은 이미지 인식이 주로 사용되는 **휴대폰 잠금해제 인식**이나 **자율 주행 자동차**와 같은 분야에 많이 사용됩니다. 
 
 응용 분야에 따라 CNN을 처음부터 만들 수도 있고, 데이터셋으로 사전 학습된 모델을 사용할 수도 있습니다.
 
-CNN은 다른 신경망과 마찬가지로 `입력 계층`, `출력 계층` 및 `두 계층 사이의 여러 은닉 계층`으로 구성됩니다.
+CNN은 다른 신경망과 마찬가지로 입력 계층, 출력 계층 및 두 계층 사이의 여러 은닉 계층으로 구성됩니다.
 
 ![image](https://user-images.githubusercontent.com/102000749/170702307-081b9559-ba5d-4520-b36c-3f42f750d826.png)
 
