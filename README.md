@@ -63,28 +63,46 @@
 
 **<인공지능이 처리하는 방식>**
 
+<br>
+
+
 그리고 인공지능에는 머신러닝과 딥러닝이 있습니다. 
 
-머신러닝과 딥러닝의 가장 큰 차이점은 학습할 데이터에 있습니다. 
+머신러닝과 딥러닝의 가장 큰 차이점은 **학습할 데이터**에 있습니다. 
 
-`머신러닝`은 학습에 필요한 feature(특징)을 **사람이 직접 제공**해야 하지만, 
+**머신러닝**`Machine Learning`은 학습에 필요한 feature를 **사람이 직접 제공**해야 하지만, 
 
-`딥러닝`은 **스스로** feature를 추출해서 데이터 학습에 적용할 수 있습니다. 
+**딥러닝**`Deep Learning`은 **스스로** feature를 추출해서 데이터 학습에 적용할 수 있습니다. 
 
 <br>
 
 ## 딥러닝(Deep Learning) 이란?
-`딥 러닝`은 **머신 러닝의 한 방법**으로, 학습 과정 동안 인공 신경망으로서 `예시 데이터`에서 얻은 일반적인 규칙을 **독립적**으로 구축(훈련)합니다. 
+
+**딥 러닝**`Deep Learning` 은 인간의 신경망의 원리를 모방한 심층신경망 이론을 기반해 고안된 머신러닝 방법의 일종입니다.
 
 특히 머신 비전 분야에서 신경망은 일반적으로 데이터와 예제 데이터에 대한 사전 정의된 결과와 같은 **지도 학습**을 통해 학습됩니다.
+
+<br>
+
+딥 러닝이 기존의 통계학이나 다른 머신러닝 방법과 다른 큰 차이점은 인간의 뇌를 기초로하여 설계되었다는 점입니다.
+
+인간은 컴퓨터가 아주 짧은 시간에 할 수 있는 계산도 쉽게 해낼 수 없는 반면, 컴퓨터는 인간이 쉽게 인지하는 사진이나 음성을 해석하지 못합니다.
+
+이는 인간의 뇌가 엄청난 수의 **뉴런**`Neuron`과 **시냅스**`Synapse`로 이루어져 있기 때문입니다.
+
+각각의 뉴런은 큰 연산을 수행하는 능력이 없지만 수많은 뉴런들이 복잡하게 연결되어 병렬연산을 수행해 컴퓨터가 하지 못하는 음성, 영상인식을 수월하게 할 수 있습니다.
+
+딥 러닝은 이 뉴런과 시냅스의 병렬연산을 컴퓨터로 재현하는 방법이며, 기존의 로직과는 많은 차이를 보입니다.
+
+<br>
 
 딥러닝의 또 다른 이름은 **심층신경망(Deep Neural Network, DNN)** 입니다. 
 
 이름에서 알 수 있듯이 딥러닝은 뉴런으로 구성된 레이어를 여러 개 연결해서 구성한 네트워크이며, 
 
-네트워크를 어떻게 구성하느냐에 따라 `통 NN(Neural Network)`으로 불립니다. 
+네트워크를 어떻게 구성하느냐에 따라 **통 NN**`Neural Network`으로 불립니다. 
 
-대표적인 예로 `CNN(Convolutional Neural Network)`, `RNN(Recurrent Neural Network)` 등이 있습니다. 
+대표적인 예로 **CNN**`Convolutional Neural Network`, **RNN**`Recurrent Neural Network` 등이 있습니다. 
   
 <br>
   
@@ -95,7 +113,11 @@
 
 ## 1세대: Perceptron
 
-[인공신경망(Neural Network)](https://ko.wikipedia.org/wiki/%EC%9D%B8%EA%B3%B5_%EC%8B%A0%EA%B2%BD%EB%A7%9D)의 기원은 1958년에 [Rosenblatt](https://en.wikipedia.org/wiki/Frank_Rosenblatt)가 제안한 퍼셉트론이 시작이라 할 수 있습니다.
+[인공신경망(Neural Network)](https://ko.wikipedia.org/wiki/%EC%9D%B8%EA%B3%B5_%EC%8B%A0%EA%B2%BD%EB%A7%9D)의 기원이 되는 퍼셉트론은 1958년 [Rosenblatt](https://en.wikipedia.org/wiki/Frank_Rosenblatt)가 제안하였는데, n개의 입력을 받아 특정한 연산을 거쳐 하나의 값을 출력하는 방식입니다.
+
+이 연산은 1차함수의 형태`f(x) = w * x + b`를 띄며, 여기에 **활성화 함수**`Activation Function`을 적용하여 최종 값을 출력합니다.  
+
+이 출력값은 참인지 거짓인지를 판단합니다. (0 vs 1)
 
 n개의 input과 1개의 output에 대하여 각각의 input의 weight를 wi라 한 후 퍼셉트론을 수식으로 나타내면 다음과 같습니다.
 
@@ -117,23 +139,22 @@ n개의 input과 1개의 output에 대하여 각각의 input의 weight를 wi라 
 
 XOR 같은 간단한 것도 학습하지 못하는 퍼셉트론의 단점을 해결하기 위한 방법은 의외로 단순하였는데 
 
-Input layer와 output layer사이에 하나 이상의 hidden layer를 추가하여 학습하는 것, [다층 퍼셉트론(Multilayer perceptron)](https://en.wikipedia.org/wiki/Multilayer_perceptron)이라 합니다.
+**입력층**`Input layer`와 **출력층**`output layer`사이에 하나 이상의 **은닉층**`hidden layer`를 추가하여 학습하는 것, [다층 퍼셉트론(Multilayer perceptron)](https://en.wikipedia.org/wiki/Multilayer_perceptron)이라 합니다.  
 
-아래 그림을 보면 hidden layer가 증가할수록 분류력이 좋아지는 것을 확인할 수 있습니다.
+아래의 그림은 은닉층의 개수에 따라 모델의 분류력이 좋아진다는 것을 보여줍니다.  
 
 ![image](https://user-images.githubusercontent.com/102000749/170699209-d368e1e3-cc65-4639-a8e4-8b39c28d2f17.png)
 
+하지만 이런 방법은 은닉층의 개수가 증가할수록 가중치의 개수도 증가해 학습이 어렵다는 단점이 존재했습니다. 
 
-허나 이 방법은 hidden layer의 갯수가 증가할수록 weight의 갯수도 계속 증가하게 되어 학습(Traning)이 어렵다는 단점이 있는데 
-
-Rumelhart등은 [에러역전파알고리즘(Error Backpropagation Algorithm)](https://en.wikipedia.org/wiki/Backpropagation)을 개발하여 다층 퍼셉트론의 학습을 가능하게 하였습니다. 
+이러한 문제를 **[에러역전파알고리즘(Error Backpropagation Algorithm)](https://en.wikipedia.org/wiki/Backpropagation)**`Backpropagation Algorithm`을 개발하여 다층 퍼셉트론의 학습을 가능하게 하였습니다. 
 
 에러역전파알고리즘으로 다층퍼셉트론을 학습할 수 있게 되었으나 이것을 실제로 사람들이 이용하기에는 많은 어려움이 따랐는데 그 이유들은 다음과 같습니다.
 
-1. 수많은 Labeled data가 필요하다.
-2. 학습을 하면 할수록 성능이 떨어진다(Vanishing gradient problem).
-3. Overfitting problem
-4. Local minima에 빠질 가능성
+1. 수많은 **레이블**`Label`이 필요하다.
+2. **과적합**`Overfitting`으로 인해 성능이 떨어질 수 있다.
+3. **기울기 소실**`Gradient Vanishing` 문제가 발생할 수 있다.
+4. **로컬 미니멈**`Local minimum`에 빠질 가능성이 있다.
 
 추정해야 하는 모수가 많기 때문에 데이터가 많이 필요하고 그 중에서도 [labeled data](https://en.wikipedia.org/wiki/Labeled_data)가 많이 필요합니다. 
 
@@ -149,45 +170,28 @@ Rumelhart등은 [에러역전파알고리즘(Error Backpropagation Algorithm)](h
 
 마지막으로 최소제곱추정량이나 최대가능도추정량등 직접적으로 최소값을 구하는 방법을 이용하지 못하고 알고리즘을 이용하여 최소값에 가까워지게 했기 때문에
 
-학습에서 나온 최소값이 과연 진짜 최소값(Global minima)인가? 국소 최소값(Local minima)는 아닌가..에 대한 의문점이 풀리지 않게 됩니다. 
+학습에서 나온 최소값이 과연 **진짜 최소값**`Global minima`인가? **국소 최소값**`Local minima`는 아닌가..에 대한 의문점이 풀리지 않게 됩니다. 
 
 시작점을 어떻게 두느냐에 따라 `Local minima`에 빠질 수도 있기 때문입니다.
 
 ![image](https://user-images.githubusercontent.com/102000749/170700310-5241bf59-3733-44aa-aa2a-2886191f76bb.png)
 
-이런 문제점들 때문에 실제로 Neural Network은 지지벡터머신(Support Vector Machine)등에 밀려 2000년 초까지 제대로 활용되지 못하였습니다.
+이런 문제점들 때문에 실제로 Neural Network은 **지지벡터머신**`Support Vector Machine`등에 밀려 2000년 초까지 제대로 활용되지 못하였습니다.
 
 ## 3세대: Unsupervised Learning - Boltzmann Machine
 
-앞서 언급한 단점들 때문에 인공신경망 이론이 잘 이용되지 못하다가, 2006년 볼츠만 머신을 이용한 학습방법이 재조명되면서 인공신경망 이론이 다시 학계의 주목을 받게 되었는데 
+다층 퍼셉트론의 단점으로 인해 인공신경망 이론이 잘 활용되지 못하던 와중, 2006년 볼츠만 머신을 이용한 학습방법으로 인해 딥 러닝이 다시 재조명되기 시작합니다.
 
-이 볼츠만 머신의 핵심 아이디어는 바로 `Unsupervised Learning`, 즉 **label이 없는 데이터로 미리 충분한 학습을 한다**는 것이며 그 후에 앞에 나온 [역전파알고리즘](https://ko.wikipedia.org/wiki/%EC%97%AD%EC%A0%84%ED%8C%8C) 등을 통해 
-
-기존의 supervised learning을 수행합니다. 
+**볼츠만 머신**`Boltzmann Machine`의 핵심 이론은 바로 **비지도학습**`Unsupervised Learning`, 즉 **레이블 데이터 없이 미리 충분히 학습을 한 이후 기존의 지도학습을 수행**하는 것입니다.
 
 아래 그림에 대략적인 묘사가 표현되어 있는데 아기들은 단어나 음, 문장의 뜻을 전혀 모르는 상태로 학습을 시작하게 되고 
 
-`음소(phoneme)`, `단어(word)`, `문장(sentence)`순으로 [Unsupervised learning](https://ko.wikipedia.org/wiki/%EB%B9%84%EC%A7%80%EB%8F%84_%ED%95%99%EC%8A%B5)을 수행하게 되며 그 후에 정답을 가지고 [supervised learning](https://ko.wikipedia.org/wiki/%EC%A7%80%EB%8F%84_%ED%95%99%EC%8A%B5)을 수행하게 됩니다.
+**음소**`phoneme`, **단어**`word`, **문장**`sentence`순으로 비지도학습을 수행하게 되며 그 후에 정답을 가지고 지도학습을 수행하게 됩니다.
 
 ![image](https://user-images.githubusercontent.com/102000749/170700914-84beb7cd-dbc1-4464-8fe3-7d07133d54c0.png)
 
-이런 방법을 통해 앞서 언급한 다중 퍼셉트론의 단점들이 많이 해결되는데, Unlabeled data를 이용할 수 있고 이를 이용해 unsupervised pre-training을 수행함으로서 
-
-vanishing gradient problem, overfitting problem이 극복될 수 있으며, 
-
-pre-training이 올바른 초기값 선정에도 도움을 주어 local minima problem도 해결할 수 있을 것이라 여겨지고 있습니다.
-
-## 3세대: Supervised Learning - Rectified linear unit (ReLU), Dropout
-
-**RBM**을 이용한 Unsupervised learning을 이용하게 되면서 다층퍼셉트론의 약점이 많은 부분 극복되었습니다.
-
-Unlabeled data를 사용할 수 있게 되었고 이를 충분히 활용하여 overfitting issue가 해결되었고 
-
-pre-training이 좋은 시작점을 제공하여 local minima 문제도 해결되는 것처럼 보였습니다. 
-
-한편, 언급된 다층퍼셉트론의 약점을 그냥 Supervised Learning에서 해법을 찾으려는 최근의 노력들이 있었고 
-
-그 결과로 지금까지 나온 대표적인 아이디어가 Rectified linear unit(ReLU), Dropout입니다.
+이러한 방법으로 앞서 말한 기울기 소실, 과적합 문제의 극복이 가능하게 되었으며, 지도학습 이전의 **비지도 사전학습**`Unsupervised pre-train`을 통한 올바른 초기값 선정으로 로컬 미니멈 문제도 해결이 가능하게 되었습니다.
+ 
 
 <br>
 
