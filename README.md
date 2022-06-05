@@ -12,33 +12,33 @@
 </table>
 
 ## 🔍 Content
-1. [인공지능 알고리즘](#인공지능-알고리즘)  
-2. [딥러닝(Deep Learning) 이란?](#딥러닝deep-learning-이란)
-3. [The History of Deep Learning](#the-history-of-deep-learning)
+1. [🖥 인공지능 알고리즘](#-인공지능-알고리즘)  
+2. [🧠 딥러닝(Deep Learning) 이란?](#-딥러닝deep-learning-이란)
+3. [📚 The History of Deep Learning](#-the-history-of-deep-learning)
    + [1세대: Perceptron](#1세대-perceptron)
    + [2세대: Multilayer Perceptron](#2세대-multilayer-perceptron)
    + [3세대: Unsupervised Learning - Boltzmann Machine](#3세대-unsupervised-learning---boltzmann-machine)
-4. [CNN (Convolutional Neural Network, 컨볼루션 신경망)](#cnn-convolutional-neural-network-컨볼루션-신경망)
-5. reviews
+4. [🐈 CNN (Convolutional Neural Network, 컨볼루션 신경망)](#-cnn-convolutional-neural-network-컨볼루션-신경망)
+5. 📝 **reviews**
    + [LeNet-5](https://github.com/ooyniz/YJU-WDB2A-DeepLearning/blob/main/reviews/LeNet-5.md)
    + [AlexNet](https://github.com/ooyniz/YJU-WDB2A-DeepLearning/blob/main/reviews/AlexNet.md)
    + [VGGNet](https://github.com/ooyniz/YJU-WDB2A-DeepLearning/blob/main/reviews/VGGNet.md)
    + [ResNet](https://github.com/ooyniz/YJU-WDB2A-DeepLearning/blob/main/reviews/ResNet.md)
    + [ViT](https://github.com/ooyniz/YJU-WDB2A-DeepLearning/blob/main/reviews/ViT.md)
-6. implementation
+6. 🛠 **implementation**
    + [ViT](https://github.com/ooyniz/YJU-WDB2A-DeepLearning/blob/main/reviews/WD2A_1%EC%A1%B0_ViT_%EA%B5%AC%ED%98%84%ED%95%B4%EB%B3%B4%EA%B8%B0.ipynb)
    + [ViT-2](https://github.com/ooyniz/YJU-WDB2A-DeepLearning/blob/main/reviews/WD2A_1%EC%A1%B0_ViT_%EA%B5%AC%ED%98%84%ED%95%B4%EB%B3%B4%EA%B8%B02.ipynb)
 
 <br>
 <br>
 
-## 목표
+## 📌 목표
 - 인공지능과 딥러닝의 개념을 **이해**합니다.
 - 딥러닝 구현과 학습을 위한 데이터를 이해하고 데이터를 준비하는 방법을 **학습**합니다.
 
 <br>
 
-### 함께 볼 것
+### 🔗 함께 볼 것
 * [모두를 위한 딥러닝 강좌 시즌1](https://www.youtube.com/playlist?list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm)
 * [딥러닝 홀로서기 - Idea Factory KAIST](https://www.youtube.com/watch?v=hPXeVHdIdmw&list=PLSAJwo7mw8jn8iaXwT4MqLbZnS-LJwnBd)
   * 입문용, 딥러닝 이해
@@ -46,7 +46,7 @@
 
 <br>
 
-## 인공지능 알고리즘
+## 🖥 인공지능 알고리즘
 
 인공지능은 사고나 학습 등 인간이 가진 능력을 컴퓨터를 통해 구현하는 기술입니다. 
 
@@ -75,7 +75,7 @@
 
 <br>
 
-## 딥러닝(Deep Learning) 이란?
+## 🧠 딥러닝(Deep Learning) 이란?
 
 **딥 러닝**`Deep Learning` 은 인간의 신경망의 원리를 모방한 심층신경망 이론을 기반해 고안된 머신러닝 방법의 일종입니다.
 
@@ -108,7 +108,7 @@
 ------
 
 
-# The History of Deep Learning
+# 📚 The History of Deep Learning
 
 딥러닝의 역사는 크게 3가지 세대로 나누며, 1세대는 최초의 인경신공망인 퍼셉트론, 2세대는 다층 퍼셉트론, 마지막 3세대를 현재의 딥러닝이라고 할 수 있습니다.
 
@@ -203,7 +203,7 @@ XOR 같은 간단한 것도 학습하지 못하는 퍼셉트론의 단점을 해
 
 -------
 
-## CNN (Convolutional Neural Network, 컨볼루션 신경망)
+## 🐈 CNN (Convolutional Neural Network, 컨볼루션 신경망)
 
 ![image](https://user-images.githubusercontent.com/102000749/170703624-83c024a1-420c-4b61-8bd0-fc90fcefd075.png)
 
